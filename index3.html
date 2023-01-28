@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ID and Class in JavaScript</title>
+</head>
+<body>
+  <h1 id="main-header">Main Header</h1>
+  <p class="intro">This is an example of using the id and class attributes in JavaScript.</p>
+  <p class="intro">We can use the id attribute to select a single element on the page.</p>
+  <p class="intro">We can use the class attribute to select multiple elements that belong to the same class.</p>
+
+  <script>
+    var mainHeader = document.getElementById("main-header");
+    mainHeader.innerHTML = "ID and Class in JavaScript";
+    var introElements = document.getElementsByClassName("intro");
+    for (var i=0; i < introElements.length; i++) {
+      introElements[i].innerHTML = "This paragraph belongs to the 'intro' class.";
+    }
+    </script>
+</body>
+</html>
